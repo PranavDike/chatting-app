@@ -1,16 +1,16 @@
 import React from "react";
-
 import MessageCart from "../components/MessageCart";
 import { VscSearch } from "react-icons/vsc";
+import MessageBox from "../components/MessageBox";
 
 const Home = () => {
   return (
     <div>
       <div>
         {/* component */}
-        <div className="flex w-screen h-screen text-gray-700">
+        <div className="flex w-screen h-screen ">
           {/* Component Start */}
-          <div className="flex flex-col items-center w-16 pb-4 overflow-auto bg-gray-200">
+          <div className="flex flex-col items-center w-14 pb-4 overflow-auto bg-gray-200">
             <a
               className="flex items-center justify-center flex-shrink-0 w-full h-16 bg-gray-200"
               href="/"
@@ -75,7 +75,7 @@ const Home = () => {
           <div className="flex flex-col w-80 border-r border-gray-300">
             <div className="sidebar-header">
               <div className="title">
-                <h1 className="text-xl font-bold m-3">Messages</h1>
+                <h1 className="text-xl tracking-wide font-bold m-3">Messages</h1>
               </div>
               <div className="search  h-10 w-72 mx-auto rounded  bg-gray-300 mb-4">
                 <div className="search-icon inline-block  align-middle  p-3">
@@ -111,7 +111,9 @@ const Home = () => {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col flex-grow bg-gray-500"></div>
+          <div className="flex flex-col flex-grow bg-gray-500">
+            <MessageBox />
+          </div>
           {/* Component End  */}
         </div>
       </div>
