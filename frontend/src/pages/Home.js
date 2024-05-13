@@ -1,7 +1,9 @@
 import React from "react";
+// import { useAuth } from "../../../contexts/authContext/index.jsx";
 import MessageCart from "../components/MessageCart";
 import { VscSearch } from "react-icons/vsc";
 import MessageBox from "../components/MessageBox";
+import SidebarOptions from "../components/SidebarOptions";
 
 const Home = () => {
   return (
@@ -74,11 +76,18 @@ const Home = () => {
           {/* Column 2 - message cart column */}
           <div className="flex flex-col w-80 border-r border-gray-300">
             <div className="sidebar-header">
-              <div className="title">
-                <h1 className="text-xl tracking-wide font-bold m-3">Messages</h1>
+              <div className="flex items-center justify-between pe-3 ps-1.5">
+                <div className="title">
+                  <h1 className="text-xl tracking-wide font-bold m-3">
+                    Messages
+                  </h1>
+                </div>
+                <div className="dropdown-options">
+                  <SidebarOptions />
+                </div>
               </div>
               <div className="search  h-10 w-72 mx-auto rounded  bg-gray-300 mb-4">
-                <div className="search-icon inline-block  align-middle  p-3">
+                <div className="search-icon inline-block align-middle p-3">
                   <VscSearch />
                 </div>
 

@@ -19,10 +19,10 @@ const NavbarProfile = () => {
         </div>
       </div>
       <div className=" shrink-0 text-gray-900 flex  ">
-        <div class="inline-block text-[25px] me-4 mt-2">
+        <div className="inline-block text-[25px] me-4 mt-2">
             <IoCall />
         </div>
-        <div class="inline-block text-[25px] mt-2">
+        <div className="inline-block text-[25px] mt-2">
             <IoVideocam />
         </div>
       </div>

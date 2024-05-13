@@ -8,7 +8,6 @@ import { useAuth } from "../../../contexts/authContext/index.jsx";
 
 const Login = () => {
   const { userLoggedIn } = useAuth();
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isSigningIn, setIsSigningIn] = useState(false);
@@ -80,7 +79,7 @@ const Login = () => {
             {errorMessage && (
               <span className="text-red-600 font-bold">{errorMessage}</span>
             )}
-
+9
             <button
               type="submit"
               disabled={isSigningIn}
