@@ -3,8 +3,8 @@ import { Navigate, Link } from "react-router-dom";
 import {
   doSignInWithEmailAndPassword,
   doSignInWithGoogle,
-} from "../firebase/auth";
-import { useAuth } from "../contexts/authContext";
+} from "../../../firebase/auth";
+import { useAuth } from "../../../contexts/authContext/index.jsx";
 
 const Login = () => {
   const { userLoggedIn } = useAuth();
