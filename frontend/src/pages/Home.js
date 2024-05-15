@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import MessageCart from "../components/MessageCart";
 import { VscSearch } from "react-icons/vsc";
 import MessageBox from "../components/MessageBox";
 
 const Home = () => {
+
+  const [hidden] = useState(false)
   return (
     <div>
       <div>
         {/* component */}
-        <div className="flex w-screen h-screen ">
+        <div className="2xl:container 2xl:mx-auto flex w-screen h-screen ">
           {/* Component Start */}
-          <div className="flex flex-col items-center w-14 pb-4 overflow-auto bg-gray-200">
+          <div className="hidden md:flex flex-col items-center overflow-auto w-14 pb-4  bg-gray-200">
             <a
               className="flex items-center justify-center flex-shrink-0 w-full h-16 bg-gray-200"
               href="/"
@@ -72,7 +74,7 @@ const Home = () => {
           </div>
 
           {/* Column 2 - message cart column */}
-          <div className="flex flex-col w-80 border-r border-gray-300">
+          <div className="flex flex-col w-full md:w-80 border-r border-gray-300">
             <div className="sidebar-header">
               <div className="title">
                 <h1 className="text-xl tracking-wide font-bold m-3">Messages</h1>
@@ -111,9 +113,37 @@ const Home = () => {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col flex-grow bg-gray-500">
+
+
+
+          <div className="hidden md:flex flex-col flex-grow bg-gray-500">
             <MessageBox />
           </div>
+
+          <div className={ hidden? "hidden lg:flex-col w-full  md:w-80 border-r border-gray-300  " : "lg:flex-col w-full  md:w-80 border-r border-gray-300  "} >
+            <div className="sidebar-header">
+              <div className="title">
+                <h1 className="text-xl tracking-wide font-bold m-3">Messages</h1>
+              </div>
+              <div className="search  h-10 w-72 mx-auto rounded  bg-gray-300 mb-4">
+                <div className="search-icon inline-block  align-middle  p-3">
+                  <VscSearch />
+                </div>
+
+                <div className="search-input inline-block align-middle ">
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    className=" focus:border-none focus:outline-none bg-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+           
+          </div>
+
+          
           {/* Component End  */}
         </div>
       </div>

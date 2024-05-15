@@ -19,7 +19,7 @@ const MessageCart = () => {
           </p>
         </div>
       </div>
-      <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+      <div className=" shrink-0 flex flex-col items-end">
         <p className="text-sm leading-6 text-gray-900">16:00</p>
         <p className=" text-xs leading-5 text-gray-500">
           <LiaCheckDoubleSolid />

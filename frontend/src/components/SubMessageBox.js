@@ -1,19 +1,7 @@
-import React from 'react'
-import InputMessage from './InputMessage';
-import EmojiPicker from 'emoji-picker-react';
+import React from "react";
 
 const SubMessageBox = () => {
-  return (
-    <div className='h-80 w-96 relative '>
-       hrthtrhth<br />
-       hrthtrhth<br />
-       hrthtrhth<br />
-       hrthtrhth<br />
-       <EmojiPicker open={true} />
-       
-      <InputMessage />
-    </div>
-  )
-}
+  return <div className=" "></div>;
+};
 
-export default SubMessageBox
+export default SubMessageBox;
